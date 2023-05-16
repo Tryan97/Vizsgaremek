@@ -1,0 +1,41 @@
+### Get reviews by game id
+GET http://localhost:8080/api/reviews/1
+Accept: application/json
+
+### create review by game id
+POST http://localhost:8080/api/reviews/5
+Content-Type: application/json
+
+
+{
+  "username": "Jack2",
+  "text": "",
+  "rating":4
+}
+### create review by game id
+POST http://localhost:8080/api/reviews/1
+Content-Type: application/json
+
+
+{
+"username": "Jack3",
+"text": "",
+"rating": 4
+}
+### update review by game id and username
+PUT http://localhost:8080/api/reviews/2/Jack
+Content-Type: application/json
+
+{
+  "text": "It was alright",
+  "rating": 4
+}
+### Delete a review by id
+DELETE http://localhost:8080/api/reviews/1
+
+
+
+### Delete reviews by game id
+DELETE http://localhost:8080/api/reviews/games/1
+
+
